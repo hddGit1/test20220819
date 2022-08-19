@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送ajax get请求</title>
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("btn").onclick = function () {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                       document.getElementById("mydiv").innerHTML = this.responseText
+                    }else{
+                        alert(this.status)
+                    }
+                }
+            }
+            xhr.open("GET","/ajax/ajaxrequest2",true)
+            xhr.send()
+
+        }
+    }
+</script>
+用户名<input type="text" id="username"><br>
+<input type="button" value="发送请求" id="btn">
+<div id="mydiv"></div>
+</body>
+</html>

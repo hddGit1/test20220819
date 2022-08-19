@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的json封装测试，解决ajax跨域问题</title>
+</head>
+<body>
+<script type="text/javascript" src="/a/js/jquery-3.6.0.min.js"></script>
+<script>if (typeof module === 'object') { window.jQuery = window.$ = module.exports; };</script>
+<script type="text/javascript">
+    function sayHello(data){
+        $("#mydiv").html("欢迎你，" + data.username)
+    }
+
+    $(function () {
+        $("#btn").click(function () {
+            $.ajax({
+                type : "GET",
+                url : "http://localhost:8081/b/json1",
+                dataType : "jsonp",
+                jsonp : "fun",
+                jsonpCallback : "sayHello",
+            })
+        })
+    })
+</script>
+
+<button id="btn">jQuery库封装的jsonp</button>
+<div id="mydiv"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>将AJAX代码进行封装到jQuery库当中</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("btn").onclick = function () {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (
+            xhr.open("POST","/ajax/ajaxrequest5",true)
+            xhr.setRequ estHeader("Content-Type","application/x-www-form-urlencoded")
+            var username = document.getElementById("username").value
+            xhr.send("username=" + username )
+        }
+    }
+</script>
+<button id="btn">发送AJAX请求</button><br>
+用户名：<input type="text" id="username"><br>
+<div id="mydiv"></div>
+
+</body>
+</html>

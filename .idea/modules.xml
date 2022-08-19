@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/a/a.iml" filepath="$PROJECT_DIR$/a/a.iml" />
+      <module fileurl="file://$PROJECT_DIR$//ajax-jquery.iml" filepath="$PROJECT_DIR$//ajax-jquery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/b/b.iml" filepath="$PROJECT_DIR$/b/b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bmi-ajax/bmi-ajax.iml" filepath="$PROJECT_DIR$/bmi-ajax/bmi-ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/level-ajax-jquery/level-ajax-jquery.iml" filepath="$PROJECT_DIR$/level-ajax-jquery/level-ajax-jquery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-test/mybatis-test.iml" filepath="$PROJECT_DIR$/mybatis-test/mybatis-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-test--proxy/mybatis-test--proxy.iml" filepath="$PROJECT_DIR$/mybatis-test--proxy/mybatis-test--proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis01/mybatis01.iml" filepath="$PROJECT_DIR$/mybatis01/mybatis01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis02/mybatis02.iml" filepath="$PROJECT_DIR$/mybatis02/mybatis02.iml" />
+    </modules>
+  </component>
+</project>

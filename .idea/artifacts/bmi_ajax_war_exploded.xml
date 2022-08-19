@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="bmi-ajax:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/bmi_ajax_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bmi-ajax" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="bmi-ajax/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省市联动</title>
+</head>
+<body>
+<script type="text/javascript" src="/ajax/js/jquery-3.6.0.min.js"></script>
+<script>if (typeof module === 'object') { window.jQuery = window.$ = module.exports; };</script>
+<script type="text/javascript">
+    $(function () {
+        $("#btn").click(function () {
+            $.ajax({
+                type : "GET",
+                url : "http://localhost:8081/oa/json1",
+                dataType : "jsonp",
+                success : function (data) { //(data是一个json,{"username":"lisi"})
+                    $("#mydiv").html("欢迎你，" + data.username)
+                }
+
+            })
+        })
+    })
+
+</script>
+
+<button id="btn">jQuery封装的jsonp</button>
+<div id="mydiv"></div>
+</body>
+</html>

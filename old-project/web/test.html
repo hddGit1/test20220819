@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<script type="text/javascript">
+    function ceShi() {
+        alert("测试1111111111")
+    }
+</script>
+<body>
+<input type="button" value="测试111" onclick="ceShi()">
+
+<input type="button" value="测试222" id="ceShi2">
+<script type="text/javascript">
+    window.onload = function () {
+        var ceShi2 = document.getElementById("ceShi2");
+        ceShi2.onclick = function () {
+            alert("测试222222222")
+        }
+
+
+
+    }
+</script>
+</body>
+</html>
